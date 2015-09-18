@@ -1,0 +1,48 @@
+body {
+	font-family: Helvetica, Arial, Sans-serif;
+	background: #666F91;
+}
+
+h1 {
+	color: #ffffff;
+	text-align: center;
+}
+
+.page-container {
+	text-align: center;
+	margin-top: 10%;
+}
+
+.container {
+	border-radius: 5px;
+	border: 2px solid #dfd;
+	width: 80%;
+	margin: 0 auto;
+	background: #9C9C9C;
+}
+
+#quote {
+	font-size: 16pt;
+	padding: 10px;
+	line-height: 1.5;
+}
+
+#author {
+	font-family: Niconne;
+	font-size: 20pt;
+}
+
+#new-quote-button {
+	padding: 10px;
+	border: 1px solid #dfd;
+	background: #fff;
+	margin-top: 30px;
+	width: 80%;
+	font-size: 100%;
+}
+
+#new-quote-button:hover {
+	background: #7E93E1;
+	color: #fff;
+	cursor: pointer;
+}
