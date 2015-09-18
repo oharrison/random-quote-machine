@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	var requestUrl = "http://www.stands4.com/services/v2/quotes.php?uid=4346&tokenid=5i9ALC3BJrehgAl0&searchtype=RANDOM";
+	
 	function setNewQuote() {
 	        function renderQuote(quote) {
 			$("#quote").text("\"" + quote.quoteText + "\"");
@@ -16,9 +17,10 @@ $(document).ready(function() {
 
 		$.get(requestUrl, null, "xml").done(success);
 	}
-	
+
+	// execute setNewQuote when page initially loads	
 	setNewQuote();
 	
-	// bind click event handler "setNew"	
+	// execute setNewQuote function on new quote button click	
 	$("#new-quote-button").on('click', setNewQuote);
 });
