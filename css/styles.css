@@ -48,7 +48,7 @@ h1 {
 }
 
 footer {
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	left: 0;
 	width: 100%;
@@ -58,11 +58,12 @@ footer {
 	padding: 5px 0;
 }
 
-footer a {
-	color: #6D82FF;
+#credit a {
+	color: #0000FF;
 	text-decoration: none;
+	text-align: center;
 }
 
-footer a:hover {
+#credit a:hover {
 	text-decoration: underline;
 }
