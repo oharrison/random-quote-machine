@@ -8,10 +8,9 @@ $(document).ready(function() {
 		}
 	
 		function success(xmlData) {
-			var result = xmlData.activeElement.firstChild;
+			var result = xmlData.childNodes[0].childNodes[0];
 			var quoteText = result.firstChild.innerHTML;
-			var quoteAuthor = result.lastChild.innerHTML;
-
+			var quoteAuthor= result.lastChild.innerHTML;
 			renderQuote({quoteText : quoteText, quoteAuthor : quoteAuthor});
 		}
 
